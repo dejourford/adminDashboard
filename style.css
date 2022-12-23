@@ -1,6 +1,15 @@
 * {
     margin: 0;
     padding: 0;
+    
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
 }
 
 img {
@@ -19,7 +28,7 @@ ul {
 .sidebar {
     background: lightblue;
     border-right: 1px solid gray;
-    height: 100vh;
+    height: 100%;
     color: white;
     font-family: fantasy;
     
@@ -69,6 +78,7 @@ ul {
     justify-content: space-between;
     margin: 20px;
     align-self: center;
+    
 }
 
 .textField {
@@ -116,6 +126,67 @@ ul {
 }
 
 .content {
-    background: gray;
+    background: lightgray;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    height: 100vh;
 }
 
+
+.leftSideContent {
+    padding: 10px;
+}
+
+.cardsLeft {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-left: 20px;
+    gap: 15px;
+}
+
+.card {
+    width: 80%;
+    height: 150px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.cardActions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.announcementCard {
+    height: 150px;
+    border-bottom: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+.announcementsCards {
+    border: 1px solid black;
+    width: 80%;
+}
+
+.socials {
+    border: 1px solid black;
+    padding: 10px;
+    margin-top: 20px;
+    width: 80%;
+}
+
+.social {
+    display: flex;
+}
+
+.socialText {
+    display: flex;
+    flex-direction: column;
+}
